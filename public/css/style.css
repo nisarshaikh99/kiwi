@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.nav-logo .logo {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 8px 14px;
+    transition: background 0.2s;
+    border-radius: 16px;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    background: #ff75d1;
+    color: #2b1544;
+}
+
+.welcome {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.subtitle {
+    color: #ff75d1;
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 36px;
+    background: linear-gradient(90deg, #df39fc, #ff75d1);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin: 25px 0 0 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #a100bc, #ff7eb9);
+}
+
+section {
+    margin: 40px 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    text-shadow: 0 0 8px #fff;
+    letter-spacing: 1.5px;
+}
+
+/* ===== ABOUT SECTION FIXED ===== */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.about-content .text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-content img {
+    flex-shrink: 0;
+    width: 530px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-left: auto; /* pushes image to the right edge */
+}
+
+/* ===== OTHER SECTIONS ===== */
+.services-content,
+.vc-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-content img,
+.services-content img,
+.vc-content img,
+.contact-card img {
+    border-radius: 8px;
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.faq-content {
+    display: flex;
+    gap: 80px;
+    background: linear-gradient(90deg, #060663 40%, #774de7 100%);
+    border-radius: 20px;
+    padding: 24px;
+    color: #fff;
+}
+
+.faq-host,
+.faq-join {
+    flex: 1;
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info span {
+    font-weight: bold;
+    margin-right: 7px;
+    color: #f5a2ff;
+}
+
+/* ===== REVIEWS SECTION ===== */
+.reviews-section {
+    display: flex;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 60px auto;
+    gap: 44px;
+}
+
+.review-card {
+    width: 250px;
+    min-height: 230px;
+    text-align: left;
+    padding: 0 16px;
+    font-family: Arial, sans-serif;
+    color: #e4e5ec;
+}
+
+.review-score {
+    color: #e4e5ec;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+}
+
+.review-stars {
+    font-size: 2em;
+    color: #e4e5ec;
+    margin-bottom: 9px;
+}
+
+.star.off {
+    color: #ccc;
+}
+
+.review-count {
+    color: #b1b1b1;
+    font-size: 1.05em;
+    margin-bottom: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content .text {
+        padding-right: 0;
+    }
+
+    .about-content img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .reviews-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+
+    .review-card {
+        width: 90vw;
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 30px 0 20px 0;
+    margin-top: 40px;
+}

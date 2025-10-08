@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIWI | Sign In</title>
+    <style>
+        body {
+            background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .signin-box {
+           background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            box-shadow: 0 0 30px 0 #0005;
+            padding: 40px 30px;
+            max-width: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .signin-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        .signin-box input[type="text"],
+        .signin-box input[type="password"] {
+           background:linear-gradient(135deg, #f2f2f4 0%, #e6e4e8 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 15px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #fff;
+        }
+        .signin-box input[type="submit"] {
+            background: linear-gradient(90deg, #ff74d4, #b36aff);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            padding: 12px 0;
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signin-box input[type="submit"]:hover {
+            background: linear-gradient(90deg, #b36aff, #ff74d4);
+        }
+        .signin-box .links {
+            margin-top: 16px;
+            width: 100%;
+            text-align: center;
+        }
+        .signin-box .links a {
+            color: #ff74d4;
+            text-decoration: none;
+            margin: 0 6px;
+            font-size: 0.97rem;
+        }
+        @media (max-width: 500px) {
+            .signin-box {
+                padding: 25px 10px;
+            }
+            .container {
+                align-items: flex-start;
+                padding-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="signin-box">
+            <div class="signin-title">Sign In</div>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+            <div class="links">
+                <a href="#">Forgot Password?</a> |
+                <a href="#">Create Account</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

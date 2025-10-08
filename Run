@@ -1,0 +1,12 @@
+1st terminal
+
+npm install
+npm run dev
+
+2nd terminal
+
+npm i -g peer
+peerjs --port 3001
+
+ localhost:3000
+
